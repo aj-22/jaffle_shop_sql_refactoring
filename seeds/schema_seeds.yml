@@ -1,0 +1,15 @@
+version: 2
+
+seeds:
+  - name: jaffle_shop_customers
+    database: raw2
+    schema: jaffle_shop
+    alias: customers
+  - name: jaffle_shop_orders
+    database: raw2
+    schema: jaffle_shop
+    alias: orders
+  - name: stripe_payments
+    database: raw2
+    schema: stripe
+    alias: payments
