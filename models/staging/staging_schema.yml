@@ -1,0 +1,15 @@
+version: 2
+
+models:
+  - name: stg_jaffle_shop__customers
+    description: staging table
+    columns:
+      - name: cuatomer_id
+        description: primary key
+        tests:
+          - unique
+          - not_null
+  - name: stg_jaffle_shop__orders
+    description: staging table
+  - name: stg_stripe__payments
+    description: staging table

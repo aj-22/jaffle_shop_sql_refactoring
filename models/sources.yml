@@ -1,0 +1,19 @@
+version: 2
+
+sources:
+  - name: jaffle_shop
+    description: csv data loaded from seeds
+    database: raw2
+    schema: dbt_aj22_jaffle_shop
+    tables:
+      - name: customers
+        description: customers table
+      - name: orders
+        description: orders table
+  - name: stripe
+    description: csv data loaded from seeds
+    database: raw2
+    schema: dbt_aj22_stripe
+    tables:
+      - name: payments
+        description: payments table
